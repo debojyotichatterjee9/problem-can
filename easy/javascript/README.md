@@ -33,4 +33,39 @@ Step 4) 3 is odd; subtract 1 and obtain 2.
 Step 5) 2 is even; divide by 2 and obtain 1. 
 Step 6) 1 is odd; subtract 1 and obtain 0.
 ```
+### 3. ISOMORPHIC_STRINGS
 
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+
+Example:
+
+```
+Input: s = "egg", t = "add"
+Output: true
+
+Input: s = "foo", t = "bar"
+Output: false
+
+Input: s = "paper", t = "title"
+Output: true
+```
+
+### 4. COMMON_ELEMENTS_IN_ARRAY
+
+Given two arrays arr1 and arr2, determine if they are have any common elements.
+
+
+Example:
+
+```
+Input: arr1 = ["a", "b", "c", "d"]; arr2 = ["x", "y", "z", "p"];
+Output: false
+
+Input: arr1 = ["a", "b", "c", "d"]; arr2 = ["x", "y", "z", "a"];
+Output: true
+
+```
