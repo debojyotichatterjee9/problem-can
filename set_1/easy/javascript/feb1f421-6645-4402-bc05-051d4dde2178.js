@@ -21,6 +21,7 @@ const findNLargest = (arr, n) => {
 }
 
 const arr1 = [407, 248, 169, 232, 371, 470, 86, 209, 465, 193]
+const n = 3
 console.log(`The input array --> [${arr1}]`);
-const res1 = findNLargest(arr1,3);
-console.log(res1);
+const res1 = findNLargest(arr1, n);
+console.log(`The ${n}th largest number is --> ${res1}`);
