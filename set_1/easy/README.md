@@ -7,8 +7,13 @@ Output: 90, 50, 23
 ```
 
 ### feb1f421-6645-4402-bc05-051d4dde2178
-#### Question 2
+#### Given an array of integers, our task is to write a program that efficiently finds the nth largest element present in the array. 
 ```
-Example 2
+Input: arr[] = {12, 35, 1, 10, 34, 1}
+Input: n = 3
+Output: The third largest element is 12.
+Explanation: The largest element of the 
+array is 35 and the second 
+largest element is 34 and the third largest is 12
 ```
 
