@@ -24,9 +24,10 @@ console.log(res1);
 
 // Solution 2:
 // Function to print three largest elements
-const printLargestThree2 = (arr, arr_size) => {
+const printLargestThree2 = (arr) => {
     let first, second, third;
     arr = removeDupes(arr);
+    arr_size = arr.length
     // There should be atleast three elements
     if (arr_size < 3) {
         return ("Invalid Input!!!");
