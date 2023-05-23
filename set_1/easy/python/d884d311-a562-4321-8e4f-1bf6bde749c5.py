@@ -3,7 +3,7 @@
 def max_min_rearranger(arr):
 
     arr_len = len(arr)
-    temp_arr = []
+    temp_arr = arr_len*[None]
 
     min_index, max_index = 0, arr_len-1
 
@@ -19,7 +19,7 @@ def max_min_rearranger(arr):
 
         flag = bool(1-flag)
 
-        return temp_arr
+    return temp_arr
 
 
 arr1 = [24, 25, 29, 40, 43, 46, 56, 66, 82, 95]
