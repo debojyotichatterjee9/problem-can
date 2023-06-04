@@ -54,3 +54,15 @@ Input: arr[] = {1, 6, 7, 8}, d = 3
 Output: 8, 1, 6, 7
 ```
 
+### 🎯 020c5507-824a-4bf1-b6b3-c0766fd46c46
+#### Write a function which takes only parentheses (curly {}, square [], or round ()). It should check that all parentheses in provided string is balanced or not. Simply it should check if there's an opening parentheses then it should have closing parentheses.
+
+```
+Input: string_val1 = "{[({})]}"
+First output: The parentheses are balanced.
+Input: string_val2 = "{[({})}"
+Second output: The parentheses are not balanced.
+Input: string_val3 = "{[({}M)]}"
+Second output: Input Validation Error!
+```
+
