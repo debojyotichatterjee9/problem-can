@@ -12,7 +12,7 @@ const elementSwapper = (arr, index1, index2) => {
 }
 
 const generateWaveArray = arr => {
-    let [sortedArray, waveArray] = [arraySorter(arr), []];
+    let [sortedArray] = [arraySorter(arr)];
     const arrayLength = sortedArray.length;
     for (let i = 0; i < arrayLength; i += 2) {
         elementSwapper(sortedArray, i, i + 1);
