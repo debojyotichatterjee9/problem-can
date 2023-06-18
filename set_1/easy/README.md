@@ -75,3 +75,14 @@ Output: arr[] = {10, 5, 6, 2, 20, 3, 100, 80}
 Input: arr[] = {20, 10, 8, 6, 4, 2}
 Output: arr[] = {20, 8, 10, 4, 6, 2}
 ```
+
+### 🎯 d03b9402-989a-4934-9b9f-c8f2bb839f4e
+#### Given an unsorted array of positive integers, find the number of triangles that can be formed with three different array elements as three sides of triangles. For a triangle to be possible from 3 values, the sum of any of the two values (or sides) must be greater than the third value (or third side). 
+
+```
+Input:  arr[] = [4, 6, 3, 7]
+Output: arr[] = [[3, 4, 6], [4, 6, 7], [3, 6, 7]] 
+Input: arr[] = [10, 21, 22, 100, 101, 200, 300]
+Output: arr[] = [[10, 21, 22], [21, 100, 101], [22, 100, 101], 
+[10, 100, 101], [100, 101, 200], [101, 200, 300]]
+```
