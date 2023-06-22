@@ -9,16 +9,8 @@ function findNumberOfTriangles(arr) {
 
             for (let k = j + 1; k < arrLength; k++) {
 
-                if (arr[i] + arr[j] > arr[k]) {
+                if (arr[i] + arr[j] > arr[k] && arr[i] + arr[k] > arr[j] && [arr[k], arr[j], arr[i]]) {
                     resultantArr.push([arr[i], arr[j], arr[k]]);
-                    count++;
-                }
-                if (arr[i] + arr[k] > arr[j]) {
-                    resultantArr.push([arr[i], arr[k], arr[j]]);
-                    count++;
-                }
-                if (arr[k] + arr[j] > arr[i]) {
-                    resultantArr.push([arr[k], arr[j], arr[i]]);
                     count++;
                 }
             }
@@ -30,7 +22,7 @@ function findNumberOfTriangles(arr) {
     });
 }
 
-let arr1 = [4, 6, 3, 7];
+let arr1 = [96, 87, 15, 73, 16, 78, 35, 81, 45, 37];
 resp1 = findNumberOfTriangles(arr1);
 console.log(`The number of possible traingles are --> ${resp1.count}`);
-console.log("The possible valid traingles are -->",resp1.resultantArr);
+console.log("The possible valid traingles are -->", resp1.resultantArr);
