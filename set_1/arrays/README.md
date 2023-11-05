@@ -86,3 +86,11 @@ Input: arr[] = [10, 21, 22, 100, 101, 200, 300]
 Output: arr[] = [[10, 21, 22], [21, 100, 101], [22, 100, 101], 
 [10, 100, 101], [100, 101, 200], [101, 200, 300]]
 ```
+
+### 🎯 2055e568-b0b2-4a67-a761-f7714b383276
+#### Given an array of integers. All numbers except one number occurs once. Find the number that occur only once. 
+
+```
+Input:  arr[] = {2, 3, 5, 4, 5, 3, 4}
+Output: 2 
+```
