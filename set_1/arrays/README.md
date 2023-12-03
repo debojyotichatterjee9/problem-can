@@ -91,6 +91,6 @@ Output: arr[] = [[10, 21, 22], [21, 100, 101], [22, 100, 101],
 #### Given an array of integers. All numbers except one number occurs once. Find the number that occur only once. 
 
 ```
-Input:  arr[] = {2, 3, 5, 4, 5, 3, 4}
-Output: 2 
+Input:  arr[] = [2, 3, 2, 4, 4, 3, 7, 1, 9, 1, 7, 0]
+Output: [9,0]
 ```
