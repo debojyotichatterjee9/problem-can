@@ -28,7 +28,7 @@ console.log(`The number of possible traingles are --> ${resp1.count}`);
 console.log("The possible valid traingles are -->", resp1.resultantArr);
 
 // Solution 2:
-// TODO: This solution is not working as expected
+// TODO: This solution is not working as expected. Check this or remove.
 const arraySorter = arr => arr.sort((elem1, elem2) => elem1 - elem2)
 
 const findNumberOfTriangles2 = arr => {
