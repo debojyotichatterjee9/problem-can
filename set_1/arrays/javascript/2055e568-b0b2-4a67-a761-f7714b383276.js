@@ -1,4 +1,4 @@
-let arr = [2, 3, 2, 4, 4, 3, 7, 1, 9, 1, 7, 0];
+const arr = [2, 3, 2, 4, 4, 3, 7, 1, 9, 1, 7, 0];
 
 // Solution 1:
 const findSingleOccuringElem = (arr) => {
@@ -19,4 +19,4 @@ const findSingleOccuringElem = (arr) => {
     return singleOccuringElems.length > 0 ? singleOccuringElems : "None";
 }
 const resp1 = findSingleOccuringElem(arr);
-console.log(`The element(s) which occurs only once is ==> ${resp1}`);
+console.log(`The element(s) which occurs only once --> ${resp1}`);
