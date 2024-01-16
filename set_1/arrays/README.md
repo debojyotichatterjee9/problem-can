@@ -94,3 +94,12 @@ Output: arr[] = [[10, 21, 22], [21, 100, 101], [22, 100, 101],
 Input:  arr[] = [2, 3, 2, 4, 4, 3, 7, 1, 9, 1, 7, 0]
 Output: [9,0]
 ```
+
+### 🎯 cdbc5054-bc8b-4ce3-baa4-72c724ba8d4f
+#### Given an array arr[] of non-negative integers and an integer sum, find a subarray that adds to a given sum. 
+#### Note: There may be more than one subarray with sum as the given sum, print first such subarray. 
+
+```
+Input:  arr[] = [1, 4, 20, 3, 10, 5]
+SUM = 33
+Output: [4, 20, 3]
