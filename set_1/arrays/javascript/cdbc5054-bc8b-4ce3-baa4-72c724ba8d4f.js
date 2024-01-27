@@ -9,8 +9,7 @@ const findSubArrayWithSum = (arr, sum) => {
             return arr[i];
         }
         else {
-            let subArr = [];
-            subArr.push(arr[i])
+            let subArr = [arr[i]];
             for (let j = i + 1; j < arrayLen; j++) {
                 currentSum += arr[j];
                 subArr.push(arr[j])
@@ -20,7 +19,7 @@ const findSubArrayWithSum = (arr, sum) => {
             }
         }
     }
-    console.log("Noone");
+    console.log("None");
     return;
 
 }
