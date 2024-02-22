@@ -4,7 +4,7 @@ const arr1 = [-1, -1, 6, 1, 9, 3, 2, -1, 4, -1];
 
 // Solution 1:
 
-const arraySortOnIndex = (arr1) => {
+const arraySortOnIndex1 = (arr1) => {
     return arr1.map((elem, index) => {
         if(elem !== index) {
             const elemToReplace = arr1.find(elem => elem === index) || -1;
@@ -13,12 +13,12 @@ const arraySortOnIndex = (arr1) => {
     });
 }
 
-const resp1 = arraySortOnIndex(arr1);
+const resp1 = arraySortOnIndex1(arr1);
 console.log(`Re-arranged array --> ${resp1}`);
 
 // Solution 2:
 
-function fixArray(arr1) {
+function arraySortOnIndex2(arr1) {
     const arrayLength = arr1.length;
     let i, j, temp;
     for (i = 0; i < arrayLength; i++) {
@@ -40,5 +40,5 @@ function fixArray(arr1) {
     return arr1;
 }
 
-const resp2 = fixArray(arr1);
+const resp2 = arraySortOnIndex2(arr1);
 console.log(`Re-arranged array --> ${resp2}`);
