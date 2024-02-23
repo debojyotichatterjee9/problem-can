@@ -117,3 +117,14 @@ Input : arr = [19, 7, 0, 3, 18, 15, 12, 6, 1, 8,
 Output : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
          11, 12, 13, 14, 15, 16, 17, 18, 19]
 ```
+
+### 12. 🎯 f35a7dbf-db98-4055-b459-8f8a1624845d
+#### An array contains both positive and negative numbers in random order. Rearrange the array elements so that positive and negative numbers are placed alternatively. A number of positive and negative numbers need not be equal. If there are more positive numbers they appear at the end of the array. If there are more negative numbers, they too appear at the end of the array.
+
+```
+nput: [-1, 2, -3, 4, 5, 6, -7, 8, 9]
+Output:[9, -7, 8, -3, 5, -1, 2, 4, 6]
+
+Input: [-1, 3, -2, -4, 7, -5]
+Output:[7, -2, 3, -5, -1, -4]
+```
