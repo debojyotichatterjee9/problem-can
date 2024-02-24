@@ -1,4 +1,6 @@
-const arr1 = [-1, 2, -3, 4, 5, 6, -7, 8, 9];
+const arr1 = [-9, -92, -21, -90, 51, -73, -30, -66, -22, 48];
+
+const arr2 = [5, -3, 37, -40, 57, 52, -99, -11, -57, 28];
 
 const posNegRearrange1 = (arr, n) => {
     const arrayLength = arr.length;
@@ -25,3 +27,6 @@ const posNegRearrange1 = (arr, n) => {
 
 const resp1 = posNegRearrange1(arr1);
 console.log(`The new reaggranged array is --> ${resp1}`);
+
+const resp2 = posNegRearrange1(arr2);
+console.log(`The new reaggranged array is --> ${resp2}`);

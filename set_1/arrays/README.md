@@ -122,9 +122,28 @@ Output : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 #### An array contains both positive and negative numbers in random order. Rearrange the array elements so that positive and negative numbers are placed alternatively. A number of positive and negative numbers need not be equal. If there are more positive numbers they appear at the end of the array. If there are more negative numbers, they too appear at the end of the array.
 
 ```
-nput: [-1, 2, -3, 4, 5, 6, -7, 8, 9]
-Output:[9, -7, 8, -3, 5, -1, 2, 4, 6]
+Input: [-9, -92, -21, -90, 51, -73, -30, -66, -22, 48]
+Output:[51,-92,48,-90,-73,-30,-66,-22,-9,-21]
 
-Input: [-1, 3, -2, -4, 7, -5]
-Output:[7, -2, 3, -5, -1, -4]
+Input: [5, -3, 37, -40, 57, 52, -99, -11, -57, 28]
+Output:[52,-40,37,-11,5,-3,57,-57,28,-99]
+```
+
+### 13. 🎯 81cbed12-4622-426c-b012-05f45c832a92
+#### Given two integer arrays of the same size, “arr[]” and “index[]”, reorder elements in “arr[]” according to the given index array.
+
+```
+nput:
+arr[] = [16, 5, 7, 12, 15];
+index[] = [0, 1, 4, 2, 3];
+Output:
+arr[] = [16, 5, 12, 15, 7]
+index[] = [0, 1, 2, 3, 4] 
+
+Input:
+arr[] = [1, 12, 8, 9, 11]
+index[] = [4, 1, 3, 0, 2]
+Output:
+arr[] = [9, 12, 11, 8, 1]
+index[] = [0, 1, 2, 3, 4]
 ```
