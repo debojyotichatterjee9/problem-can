@@ -29,9 +29,9 @@ function isPalindrome_1(x) {
 
 const isPalindrome_2 = x => x >= 0 && x === Number(x.toString().split('').reverse().join(''));
 
-console.log(isPalindrome_1(123))
-console.log(isPalindrome_2(123))
-console.log(isPalindrome_1(112211))
-console.log(isPalindrome_2(112211))
-console.log(isPalindrome_1(112232211))
-console.log(isPalindrome_2(112232211))
+console.log(isPalindrome_1(123));
+console.log(isPalindrome_2(123));
+console.log(isPalindrome_1(112211));
+console.log(isPalindrome_2(112211));
+console.log(isPalindrome_1(112232211));
+console.log(isPalindrome_2(112232211));
