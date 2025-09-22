@@ -81,6 +81,6 @@ const romanToInteger_2 = romanValue => {
     }
     return finalInteger;
 }
-// console.log(romanToInteger_2('III')); // 3
-// console.log(romanToInteger_2('LVIII')); // 58
-// console.log(romanToInteger_2('MCMXCIV')); // 1994
+console.log(romanToInteger_2('III')); // 3
+console.log(romanToInteger_2('LVIII')); // 58
+console.log(romanToInteger_2('MCMXCIV')); // 1994
