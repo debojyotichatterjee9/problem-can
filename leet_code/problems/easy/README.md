@@ -79,6 +79,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 Write a function to find the longest common prefix string amongst an array of strings.
 
 If there is no common prefix, return an empty string "".
+
 ```
 Example 1:
 Input: strs = ["flower","flow","flight"]
@@ -88,4 +89,35 @@ Example 2:
 Input: strs = ["dog","racecar","car"]
 Output: ""
 Explanation: There is no common prefix among the input strings.
+```
+
+### 🎯 005.
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+```
+Example 1:
+Input: s = "()"
+Output: true
+
+Example 2:
+Input: s = "()[]{}"
+Output: true
+
+Example 3:
+Input: s = "(]"
+Output: false
+
+Example 4:
+Input: s = "([])"
+Output: true
+
+Example 5:
+Input: s = "([)]"
+Output: false
 ```
