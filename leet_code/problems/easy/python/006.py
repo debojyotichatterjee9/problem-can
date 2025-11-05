@@ -33,7 +33,23 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val  # Data stored in the node
         self.next = next # Reference to the next node
-        
+
+def array_to_list(arr):
+    dummy = ListNode(0)
+    cur = dummy
+    for v in arr:
+        cur.next = ListNode(v)
+        cur = cur.next
+    return dummy.next
+
+def list_to_array(head):
+    out = []
+    cur = head
+    while cur:
+        out.append(cur.val)
+        cur = cur.next
+    return out
+            
 def mergeTwoLists(list1, list2):
     dummy = ListNode(0)
     current = dummy
@@ -51,8 +67,8 @@ def mergeTwoLists(list1, list2):
     current.next = list1 if list1 else list2
     return dummy.next
 
-list1 = ListNode([1, 2, 4]);
-list2 = ListNode([1, 3, 4]);
+list1 = array_to_list([1, 2, 4]);
+list2 = array_to_list([1, 3, 4]);
 res1 = mergeTwoLists(list1, list2);
 print(res1);
-# console.log(listToArray(res1));
+print(list_to_array(res1));
