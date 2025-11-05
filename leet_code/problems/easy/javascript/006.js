@@ -51,7 +51,7 @@ const listToArray = (head) => {
 	return out;
 };
 
-const mergeTwoLists_1 = (list1, list2) => {
+const mergeTwoLists = (list1, list2) => {
 	const dummy = new ListNode(0);
 	let current = dummy;
 	while (list1 !== null && list2 !== null) {
@@ -70,6 +70,6 @@ const mergeTwoLists_1 = (list1, list2) => {
 
 const list1 = arrayToList([1, 2, 4]);
 const list2 = arrayToList([1, 3, 4]);
-const res1 = mergeTwoLists_1(list1, list2);
+const res1 = mergeTwoLists(list1, list2);
 console.log(res1);
 console.log(listToArray(res1));
