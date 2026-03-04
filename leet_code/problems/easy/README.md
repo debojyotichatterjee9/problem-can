@@ -1,4 +1,4 @@
-### 🎯 001.
+### 🎯 001. Two Sum.
 Given an array of integers nums and an integer target, 
 return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -19,7 +19,7 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 
-### 🎯 002. 
+### 🎯 009. Palindrome Number.
 Given an integer x, return true if x is a palindrome, and false otherwise.
 
 ```
@@ -38,7 +38,7 @@ Input: x = 10
 Output: false
 ```
 
-### 🎯 003.
+### 🎯 013. Roman to Integer.
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
 Symbol       Value
@@ -75,7 +75,7 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ```
 
-### 🎯 004.
+### 🎯 014. Longest Common Prefix.
 Write a function to find the longest common prefix string amongst an array of strings.
 
 If there is no common prefix, return an empty string "".
@@ -91,7 +91,7 @@ Output: ""
 Explanation: There is no common prefix among the input strings.
 ```
 
-### 🎯 005.
+### 🎯 020. Valid Parentheses.
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 An input string is valid if:
@@ -122,7 +122,7 @@ Input: s = "([)]"
 Output: false
 ```
 
-### 🎯006.
+### 🎯021. Merge Two Sorted Lists.
 You are given the heads of two sorted linked lists list1 and list2.
 
 Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
@@ -149,27 +149,13 @@ Output: [0]
 * -100 <= Node.val <= 100
 * Both list1 and list2 are sorted in non-decreasing order.
 
-### 🎯007.
+### 🎯026. Remove Duplicates from Sorted Array
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
 
 Consider the number of unique elements in nums to be k​​​​​​​​​​​​​​. After removing duplicates, return the number of unique elements k.
 
 The first k elements of nums should contain the unique numbers in sorted order. The remaining elements beyond index k - 1 can be ignored.
 
-Custom Judge:
-
-The judge will test your solution with the following code:
-```
-int[] nums = [...]; // Input array
-int[] expectedNums = [...]; // The expected answer with correct length
-
-int k = removeDuplicates(nums); // Calls your implementation
-
-assert k == expectedNums.length;
-for (int i = 0; i < k; i++) {
-    assert nums[i] == expectedNums[i];
-}
-```
 If all assertions pass, then your solution will be accepted.
 
  
@@ -192,3 +178,33 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 * 1 <= nums.length <= 3 * 104
 * -100 <= nums[i] <= 100
 * nums is sorted in non-decreasing order.
+
+### 🎯027. Remove Elemnent
+Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
+
+Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
+
+* Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
+* Return k.
+
+```
+Example 1:
+
+Input: nums = [3,2,2,3], val = 3
+Output: 2, nums = [2,2,_,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 2.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+Example 2:
+
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+Output: 5, nums = [0,1,4,0,3,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
+Note that the five elements can be returned in any order.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+ ```
+
+#### Constraints:
+
+* 0 <= nums.length <= 100
+* 0 <= nums[i] <= 50
+* 0 <= val <= 100
