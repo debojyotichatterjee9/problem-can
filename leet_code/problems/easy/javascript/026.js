@@ -37,8 +37,10 @@ function removeDuplicates1(nums) {
   return write;
 }
 
-const resp_1_1 = removeDuplicates1(input1);
-const resp_1_2 = removeDuplicates1(input2);
+const f1input1 = [1,1,2];
+const f1input2 = [0,0,1,1,1,2,2,3,3,4];
+const resp_1_1 = removeDuplicates1(f1input1);
+const resp_1_2 = removeDuplicates1(f1input2);
 console.log(resp_1_1);
 console.log(resp_1_2);
 
@@ -52,7 +54,9 @@ const removeDuplicates2 = (nums) => {
   return nums.length ? i + 1 : 0;
 };
 
-const resp_2_1 = removeDuplicates2(input1);
-const resp_2_2 = removeDuplicates2(input2);
+const f2input1 = [1,1,2];
+const f2input2 = [0,0,1,1,1,2,2,3,3,4];
+const resp_2_1 = removeDuplicates2(f2input1);
+const resp_2_2 = removeDuplicates2(f2input2);
 console.log(resp_2_1);
-console.log(resp_2_2); // TODO: Fix the error in this result.
+console.log(resp_2_2);
