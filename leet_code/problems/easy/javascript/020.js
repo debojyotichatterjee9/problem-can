@@ -30,6 +30,8 @@ Output: false
 ```
 */
 
+
+// Solution 1
 function isValid_1(s) {
     const stack = [];
     const map = {
@@ -52,6 +54,7 @@ function isValid_1(s) {
 }
 
 
+// Solution 2
 const isValid_2 = s => {
     const stack = [];
     const map = { ')': '(', '}': '{', ']': '[' };

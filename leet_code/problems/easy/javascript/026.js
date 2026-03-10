@@ -19,9 +19,7 @@ Explanation: Your function should return k = 5, with the first five elements of 
 It does not matter what you leave beyond the returned k (hence they are underscores).
 */
 
-const input1 = [1,1,2];
-const input2 = [0,0,1,1,1,2,2,3,3,4];
-
+// Solution 1
 function removeDuplicates1(nums) {
   if (!Array.isArray(nums)) throw new TypeError('nums must be an array');
   const n = nums.length;
@@ -45,6 +43,7 @@ console.log(resp_1_1);
 console.log(resp_1_2);
 
 
+// Solution 2
 const removeDuplicates2 = (nums) => {
   if (!Array.isArray(nums)) throw new TypeError('nums must be an array');
   let i = 0;
