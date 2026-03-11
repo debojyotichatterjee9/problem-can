@@ -49,3 +49,46 @@ const haystack2 = 'leetcode';
 const needle2 = 'etco';
 const resp2 = findNeedle2(haystack2, needle2);
 console.log(resp2);
+
+
+
+// Advanced Solution (KMP Algorithm) - For Reference
+
+function findNeedleKMP(haystack, needle) {
+    if (needle.length === 0) return 0;
+    
+    // Build LPS (Longest Proper Prefix which is also Suffix) array
+    const lps = new Array(needle.length).fill(0);
+    let len = 0;
+    let i = 1;
+    
+    while (i < needle.length) {
+        if (needle[i] === needle[len]) {
+            len++;
+            lps[i] = len;
+            i++;
+        } else {
+            if (len !== 0) {
+                len = lps[len - 1];
+            } else {
+                lps[i] = 0;
+                i++;
+            }
+        }
+    }
+    
+    // Search using LPS
+    let j = 0; // index for needle
+    for (let i = 0; i < haystack.length; i++) {
+        while (j > 0 && haystack[i] !== needle[j]) {
+            j = lps[j - 1];
+        }
+        if (haystack[i] === needle[j]) {
+            j++;
+        }
+        if (j === needle.length) {
+            return i - needle.length + 1;
+        }
+    }    
+    return -1;
+}
