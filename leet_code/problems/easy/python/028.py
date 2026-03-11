@@ -15,7 +15,7 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 class Solution:
 	# Solution 1
-	def findNeedle1(haystack, needle):
+	def findNeedle1(self, haystack, needle):
 		if(len(needle) > len(haystack)):
 			return -1
 		for i in range(len(haystack) - len(needle) + 1):
@@ -26,12 +26,16 @@ class Solution:
 				return i
 		return -1
 		
+	# Solution 2
+	def findNeedle2(self, haystack, needle):
+		return haystack.find(needle)
+		
 		
 haystack = 'leetcode'
 needle = 'etco'
 
 solObj = Solution()
 resp1 = solObj.findNeedle1(haystack, needle)
-# resp2 = solObj.removeElement2(input2, val)
+resp2 = solObj.findNeedle2(haystack, needle)
 print(resp1)
-# print(resp2)
+print(resp2)
