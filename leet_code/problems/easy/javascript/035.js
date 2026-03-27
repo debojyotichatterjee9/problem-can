@@ -17,7 +17,7 @@ Output: 4
 */
 
 // Solution 1
-const findPos = (input,target) => {
+const findPos1 = (input,target) => {
 	for(let i = 0; i < input.length; i++) {
 		if(input[i] > target || input[i] === target) {
 			return i;
@@ -33,5 +33,31 @@ const findPos = (input,target) => {
 
 const input = [1,3,5,6];
 const target = 9;
-resp1 = findPos(input, target);
+resp = findPos1(input, target);
+console.log(resp1);
+
+
+// Solution 2
+function findPos2(nums, target) {
+    let left = 0;
+    let right = nums.length - 1;
+    
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+        
+        if (nums[mid] === target) {
+            return mid;
+        } else if (nums[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    
+    // When the loop ends, left is the insertion point
+    return left;
+}
+const input = [1,3,5,7,9,11,13,15,17,19];
+const target = 4;
+resp = findPos2(input, target);
 console.log(resp1);
