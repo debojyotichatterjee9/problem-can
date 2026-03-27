@@ -19,7 +19,7 @@ Output: 4
 // Solution 1
 const findPos = (input,target) => {
 	for(let i = 0; i < input.length; i++) {
-		if(input[i] === target) {
+		if(input[i] > target || input[i] === target) {
 			return i;
 		}
 		if(input[i] < target && input[i + 1] > target) {

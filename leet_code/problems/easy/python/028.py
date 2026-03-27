@@ -1,4 +1,4 @@
-```
+'''
 Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
 Example 1:
@@ -11,7 +11,7 @@ Example 2:
 Input: haystack = "leetcode", needle = "leeto"
 Output: -1
 Explanation: "leeto" did not occur in "leetcode", so we return -1.
-```
+'''
 
 class Solution:
 	# Solution 1
@@ -25,7 +25,6 @@ class Solution:
 			else:
 				return i
 		return -1
-		
 	# Solution 2
 	def findNeedle2(self, haystack, needle):
 		return haystack.find(needle)
