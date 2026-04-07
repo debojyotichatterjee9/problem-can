@@ -16,7 +16,7 @@ Explanation: The last word is "moon" with length 4.
 Example 3:
 Input: s = "luffy is still joyboy"
 Output: 6
-Explanation: The last word is "joyboy" with length 6. 
+Explanation: The last word is "joyboy" with length 6.
 
 Constraints:
 
