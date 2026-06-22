@@ -313,7 +313,44 @@ Example 2:
 Input: a = "1010", b = "1011"
 Output: "10101"
 ```
- #### Constraints:
- * 1 <= a.length, b.length <= 104
- * a and b consist only of '0' or '1' characters.
- * Each string does not contain leading zeros except for the zero itself.
+#### Constraints:
+* 1 <= a.length, b.length <= 104
+* a and b consist only of '0' or '1' characters.
+* Each string does not contain leading zeros except for the zero itself.
+
+### 🎯69. Sqrt(x)
+Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+You must not use any built-in exponent function or operator.
+For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
+```
+Example 1:
+Input: x = 4
+Output: 2
+Explanation: The square root of 4 is 2, so we return 2.
+ 
+Example 2:
+Input: x = 8
+Output: 2
+Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+```
+
+### 🎯70. Climbing Stairs
+You are climbing a staircase. It takes n steps to reach the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+```
+Example 1:
+Input: n = 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+
+Example 2:
+Input: n = 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
+```
